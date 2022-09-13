@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://images.unsplash.com/photo-1606327054629-64c8b0fd6e4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-position: center;
+    background-size: cover;
+}
+.todo{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+
+    /* Glassmorphism card effect */
+    backdrop-filter: blur(7px) saturate(200%);
+    -webkit-backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.493);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.377);
+}
+.todo h2{
+    margin: 0 auto;
+    margin-bottom: 15px;
+    color: #864686da;
+    font-weight: bold;
+}
+#text{
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    opacity: 0.7;
+    border: none;
+    border-radius: 8px;
+}
+
+ul li{
+    padding: 10px;
+    list-style: none;
+    color: #7c0763;
+    cursor: pointer;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+   width: 40px;
+   height: 20px;
+}
+
+.feito{
+    text-decoration: line-through;
+    font-style: italic;
+}
